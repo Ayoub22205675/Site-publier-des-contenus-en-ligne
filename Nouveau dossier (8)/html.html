@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AYDREN FILIAN GALLERY</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Styles Globaux */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Montserrat', sans-serif;
+            color: #333;
+            line-height: 1.6;
+            background-color: #f9f9f9;
+        }
+
+        /* Menu et Logo */
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .header .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .nav {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .nav ul {
+            display: flex;
+            gap: 15px;
+            list-style: none;
+            padding: 0;
+        }
+
+        .nav ul li a {
+            text-decoration: none;
+            color: #333;
+            font-size: 16px;
+            font-weight: 500;
+        }
+
+        .search-icon {
+            display: flex;
+            align-items: center;
+        }
+
+        .search-icon img {
+            width: 16px;
+            height: 16px;
+        }
+
+        @media (max-width: 768px) {
+            .header {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .nav ul {
+                flex-direction: row;
+                justify-content: center;
+                gap: 10px;
+            }
+        }
+
+        /* Bannière principale */
+        .banner-line {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 90%;
+            height: 1px;
+            background-color: #ccc;
+        }
+
+        /* Exposition */
+        .exhibition-content {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 20px;
+        }
+
+        .exhibition-text {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        /* Newsletter Form */
+        .newsletter {
+            background-color: #f9f9f9;
+            padding: 20px 0;
+            border-top: 1px solid #e1e1e1;
+            border-bottom: 1px solid #e1e1e1;
+        }
+
+        .newsletter-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        .newsletter-container h3 {
+            font-size: 18px;
+            font-weight: bold;
+            color: #000;
+        }
+
+        .newsletter-form {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .newsletter-form input {
+            padding: 10px 15px;
+            font-size: 14px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+            width: 250px;
+        }
+
+        .newsletter-form button {
+            padding: 10px 20px;
+            font-size: 14px;
+            font-weight: bold;
+            color: #fff;
+            background-color: #000;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .newsletter-form button:hover {
+            background-color: #444;
+        }
+
+        /* Footer */
+        .footer {
+            text-align: center;
+            font-size: 14px;
+            padding: 20px;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        .footer p,
+        .footer address {
+            margin: 10px 0;
+        }
+
+        .footer nav a {
+            color: #A8AA49;
+            text-decoration: none;
+            font-size: 12px;
+            margin: 0 5px;
+        }
+
+        .footer nav a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <!-- Menu -->
+    <header class="header">
+        <div class="logo">AYDREN FILIAN GALLERY</div>
+        <nav class="nav">
+            <ul>
+                <li><a href="#accueil">Exhibitions</a></li>
+                <li><a href="#news">News</a></li>
+                <li><a href="#shop">Shop</a></li>
+            </ul>
+            <div class="search-icon">
+                <a href="#">
+                    <img src="https://cdn-icons-png.flaticon.com/512/622/622669.png" alt="Search Icon">
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Bannière -->
+    <section class="banner">
+        <div class="banner-container">
+            <div class="banner-left">
+                <p class="exhibition-dates">7 SEPTEMBRE - 16 OCTOBRE LOS ANGELES</p>
+                <div class="banner-line"></div>
+                <h2 class="banner-title">Malongo AUGUST</h2>
+                <p class="banner-subtitle">Au Coeur De La Terre</p>
+                <div class="banner-line"></div>
+                <p class="banner-exposition">Exposition Au CALIFORNIAN SPRINGSUIT MUSEUM</p>
+            </div>
+            <div class="banner-right">
+                <img src="images/capture1.png" alt="Exhibition Image">
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Exposition -->
+    <section class="exhibition">
+        <div class="exhibition-header">
+            <div class="banner-line"></div>
+            <h3>MALONGO AUGUST | LIMITED EDITION</h3>
+        </div>
+        <div class="exhibition-content">
+            <div class="exhibition-text">
+                <h2>Malongo AUGUST</h2>
+                <p class="avvolgere-la-terra">Avvolgere la terra</p>
+                <p>Au Coeur De La Terre, our new solo exhibition of works by Malongo AUGUST in our Los Angeles gallery space at CALIFORNIAN SPRINGSUIT MUSEUM, marks the debut of Avvolgere la terra, 2024, a new limited edition produced in collaboration with the Gallery. Avvolgere la terra, consisting of 17 sculptures with ochre and yellow pigments, refers in name to a primordial gesture, underscoring the intricate relationship between nature and humanity.</p>
+            </div>
+            <div class="exhibition-image">
+                <img src="images/dddd1.png" alt="Image de l'exposition">
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="newsletter">
+        <div class="newsletter-container">
+            <h3>Join our list</h3>
+            <form class="newsletter-form">
+                <input type="email" placeholder="Your email address" required>
+                <button type="submit">Subscribe</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <address>
+            Los Angeles<br>
+            Aydren Filian Gallery<br>
+            Californian Springsuit Museum<br>
+            Los Angeles, CA 90024<br><br>
+            T(24) 214-6578<br>
+            SpringsuitMuseum@californiandream<br><br>
+            Monday - Sunday 9 am - 9 pm
+        </address>
+        <p>AYDREN FILIAN GALLERY</p>
+        <nav>
+            <a href="#">Terms & Conditions</a> |
+            <a href="#">Privacy Policy</a> |
+            <a href="#">Accessibility Policy</a>
+        </nav>
+        <p>2024 ALL RIGHT RESERVED</p>
+    </footer>
+</body>
+</html>

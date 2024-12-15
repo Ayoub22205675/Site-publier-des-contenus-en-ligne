@@ -1,0 +1,229 @@
+/* Importation des polices */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f9f9f9;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+}
+
+.logo {
+    color: #A8AA49;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.nav ul {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+}
+
+.nav ul li a {
+    color: #000;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 400;
+    padding: 5px 0;
+    transition: color 0.3s ease;
+}
+
+.nav ul li a:hover {
+    color: #000;
+}
+
+/* Bannière principale */
+.banner {
+    background-color: #fff;
+    padding: 40px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner-container {
+    display: flex;
+    max-width: 1200px;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+}
+
+.banner-left {
+    flex: 1;
+    text-align: left;
+}
+
+.exhibition-dates {
+    font-size: 14px;
+    color: #777;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.banner-title {
+    font-size: 36px;
+    font-weight: bold;
+    color: #000;
+    margin: 5px 0;
+}
+
+.banner-subtitle {
+    font-size: 18px;
+    color: #333;
+    margin: 5px 0 20px;
+}
+
+.banner-line {
+    width: 60%;
+    height: 1px;
+    background-color: #ccc;
+    margin: 20px 0;
+}
+
+.banner-exposition {
+    font-size: 14px;
+    font-style: italic;
+    color: #999;
+}
+
+.banner-right {
+    flex: 1;
+    text-align: right;
+}
+
+.banner-right img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px; /* Si vous voulez des coins arrondis */
+}
+
+
+
+
+/* Section styling */
+.info-section {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; /* Aligne le contenu au début */
+    max-width: 1200px;
+    margin: 50px auto;
+    background-color: #fff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    padding: 20px; /* Ajoute un peu de padding */
+}
+
+/* Image container */
+.image-container {
+    flex: 0 0 35%; /* L'image occupe 35% de la largeur */
+    max-width: 35%; /* Limite la taille maximale de l'image */
+    padding-right: 20px; /* Ajoute de l'espace entre l'image et le texte */
+}
+
+.image-container img {
+    width: 100%;
+    height: auto; /* Maintient le ratio de l'image */
+    object-fit: cover; /* Garde une bonne qualité d'affichage */
+    display: block;
+    border-radius: 8px; /* Ajoute des coins arrondis */
+}
+
+/* Text container */
+.text-container {
+    flex: 1; /* Le texte occupe l'espace restant */
+    padding: 10px 20px; /* Ajoute un padding autour du texte */
+}
+
+.text-container h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.text-container p {
+    font-size: 16px;
+    margin-bottom: 15px;
+    line-height: 1.6;
+    color: #555;
+}
+
+/* Button styling */
+.learn-more-button {
+    display: inline-block;
+    padding: 12px 24px;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #fff;
+    background-color: #000;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.learn-more-button:hover {
+    background-color: #555;
+}
+
+
+
+
+
+
+/* Responsivité */
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .banner-container {
+        flex-direction: column-reverse; /* Permet de placer l'image au-dessus */
+        align-items: center;
+        text-align: center;
+    }
+
+    .banner-left {
+        text-align: center;
+    }
+
+    .banner-line {
+        width: 80%;
+    }
+
+    .banner-right {
+        order: -1; /* Change l'ordre de l'image pour qu'elle apparaisse au-dessus */
+        margin-bottom: 20px; /* Ajoute un espace entre l'image et le texte */
+    }
+
+    .banner-right img {
+        max-width: 100%;
+        height: auto;
+    }
+}
