@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Actualités de la galerie | AYDREN FILIAN GALLERY</title>
+    <meta name="description" content="Explorez les actualités et projets de la galerie AYDREN FILIAN, mettant en avant la culture, l'art et l'histoire.">
+    <link rel="stylesheet" href="styles2.css">
+    <style>
+        /* Styles Globaux */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Montserrat', sans-serif;
+            color: #333;
+            line-height: 1.6;
+            background-color: #f9f9f9;
+        }
+
+        /* Menu et Logo */
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .header .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .nav {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .nav ul {
+            display: flex;
+            gap: 15px;
+            list-style: none;
+            padding: 0;
+        }
+
+        .nav ul li a {
+            text-decoration: none;
+            color: #333;
+            font-size: 16px;
+            font-weight: 500;
+        }
+
+        .search-icon {
+            display: flex;
+            align-items: center;
+        }
+
+        .search-icon img {
+            width: 16px;
+            height: 16px;
+        }
+
+        @media (max-width: 768px) {
+            .header {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .nav ul {
+                flex-direction: row;
+                justify-content: center;
+                gap: 10px;
+            }
+        }
+
+        /* Bannière principale */
+        .banner-line {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 90%;
+            height: 1px;
+            background-color: #ccc;
+        }
+
+        /* Exposition */
+        .exhibition-content {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 20px;
+        }
+
+        .exhibition-text {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        /* Newsletter Form */
+        .newsletter {
+            background-color: #f9f9f9;
+            padding: 20px 0;
+            border-top: 1px solid #e1e1e1;
+            border-bottom: 1px solid #e1e1e1;
+        }
+
+        .newsletter-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        .newsletter-container h3 {
+            font-size: 18px;
+            font-weight: bold;
+            color: #000;
+        }
+
+        .newsletter-form {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .newsletter-form input {
+            padding: 10px 15px;
+            font-size: 14px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+            width: 250px;
+        }
+
+        .newsletter-form button {
+            padding: 10px 20px;
+            font-size: 14px;
+            font-weight: bold;
+            color: #fff;
+            background-color: #000;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .newsletter-form button:hover {
+            background-color: #444;
+        }
+
+        /* Footer */
+        .footer {
+            text-align: center;
+            font-size: 14px;
+            padding: 20px;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        .footer p,
+        .footer address {
+            margin: 10px 0;
+        }
+
+        .footer nav a {
+            color: #A8AA49;
+            text-decoration: none;
+            font-size: 12px;
+            margin: 0 5px;
+        }
+
+        .footer nav a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <!-- Menu -->
+    <header class="header">
+        <div class="logo">AYDREN FILIAN GALLERY</div>
+        <nav class="nav">
+            <ul>
+                <li><a href="html.html">Exhibitions</a></li>
+                <li><a href="html2.html">News</a></li>
+                <li><a href="#shop">Shop</a></li>
+            </ul>
+            <div class="search-icon">
+                <a href="#">
+                    <img src="https://cdn-icons-png.flaticon.com/512/622/622669.png" alt="Search Icon">
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Section 1 -->
+    <section class="info-section">
+        <div class="image-container">
+            <img src="images/chalapatu.PNG" alt="Vue sur la forêt Chapultepec">
+        </div>
+        <div class="text-container">
+            <h2>Chapultepec Forest: Nature and Culture</h2>
+            <p>
+                Chapultepec Forest, situated in the heart of Mexico City, stands as one of Latin America’s most vibrant urban parks. Its rich history dates back to ancient times, with traces of its past preserved within Mexico’s history over the last five centuries. Today, it serves as a vast and green oasis while also hosting important monumental and cultural sites, including the National Museum of Anthropology, Chapultepec Castle, and countless museums.
+            </p>
+            <p>
+                In early 2019, after decades of tradition, a 1000-acre master plan was initiated to restore and enrich Chapultepec. This park now celebrates all things of nature and fosters sustainable growth in environmental restoration, urban infrastructure, history, archeology, and more.
+            </p>
+            <button class="learn-more-button">Learn More</button>
+        </div>
+    </section>
+
+    <!-- Section 2 -->
+    <section class="info-section">
+        <div class="image-container">
+            <img src="images/qqqq.png" alt="Vue aérienne de Chapultepec">
+        </div>
+        <div class="text-container">
+            <h2>Obama Presidential Center Museum Building Measure 87-Foot Tall</h2>
+            <p>
+                Chapultepec Forest, situated in the heart of Mexico City, stands as one of Latin America's most iconic urban parks. Its roots extend back to pre-colonial times, and it has witnessed significant events in Mexico's history over the last five centuries. Today, it serves as a vast green space while also hosting important recreational and cultural sites, including the National Museum of Anthropology, Chapultepec Castle, and Cárcamo de Dolores, among others. Each year, it attracts over 20 million visitors from both Mexico and around the globe. 
+            </p>
+            <p>
+                In early 2019, after deciding to transform a 100-acre military base into a public park as part of Chapultepec, Mexican President Andrés Manuel López Obrador commissioned
+            </p>
+            <button class="learn-more-button">Learn More</button>
+        </div>
+    </section>
+
+    <!-- Section 3 -->
+    <section class="info-section">
+        <div class="image-container">
+            <img src="images/chalapatu.png" alt="Forêt et musées de Chapultepec">
+        </div>
+        <div class="text-container">
+            <h2>Chapultepec Forest: Nature and Culture</h2>
+            <p>
+                Chapultepec Forest, situated in the heart of Mexico City, stands as one of Latin America’s most vibrant urban parks. Its rich history dates back to ancient times, with traces of its past preserved within Mexico’s history over the last five centuries. Today, it serves as a vast and green oasis while also hosting important monumental and cultural sites, including the National Museum of Anthropology, Chapultepec Castle, and countless museums.
+            </p>
+            <p>
+                In early 2019, after decades of tradition, a 1000-acre master plan was initiated to restore and enrich Chapultepec. This park now celebrates all things of nature and fosters sustainable growth in environmental restoration, urban infrastructure, history, archeology, and more.
+            </p>
+            <button class="learn-more-button">Learn More</button>
+        </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="newsletter">
+        <div class="newsletter-container">
+            <h3>Join our list</h3>
+            <form class="newsletter-form">
+                <input type="email" placeholder="Your email address" required>
+                <button type="submit">Subscribe</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <address>
+            Los Angeles<br>
+            Aydren Filian Gallery<br>
+            Californian Springsuit Museum<br>
+            Los Angeles, CA 90024<br><br>
+            T(24) 214-6578<br>
+            SpringsuitMuseum@californiandream<br><br>
+            Monday - Sunday 9 am - 9 pm
+        </address>
+        <p>AYDREN FILIAN GALLERY</p>
+        <nav>
+            <a href="#">Terms & Conditions</a> |
+            <a href="#">Privacy Policy</a> |
+            <a href="#">Accessibility Policy</a>
+        </nav>
+        <p>2024 ALL RIGHT RESERVED</p>
+    </footer>
+
+</body>
+</html>
